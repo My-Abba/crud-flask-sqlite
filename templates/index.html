@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD Productos</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Productos</h1>
+        
+        <!-- Formulario para Agregar/Editar -->
+        <form id="productForm">
+            <input type="hidden" id="productId">
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="number" id="price" placeholder="Precio" step="0.01" required>
+            <textarea id="description" placeholder="Descripción"></textarea>
+            <button type="submit">Guardar</button>
+        </form>
+
+        <!-- Lista de Productos -->
+        <div id="productList"></div>
+    </div>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
